@@ -63,7 +63,10 @@ public abstract class AppiumUtils {
 	public AppiumDriverLocalService startAppiumServer(String ipAddress,int port)
 	{
 		 service = new AppiumServiceBuilder().withAppiumJS(new File("C:\\Users\\quy.buithi\\AppData\\Roaming\\npm\\node_modules\\appium"))
-					.withIPAddress(ipAddress).usingPort(port).build();
+					.withIPAddress(ipAddress)
+					.usingPort(port)
+					.withLogFile(new File(System.getProperty("user.dir")+"appium.log"))
+					.build();
 		 
 				service.start();
 				System.out.println("Starting the Appium Server on 127.0.0.1:4723");
