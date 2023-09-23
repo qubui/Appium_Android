@@ -1,0 +1,12 @@
+Jenkins permission to git
+
+https://intellipaat.com/community/21224/git-bash-could-not-open-a-connection-to-your-authentication-agent
+
+    exec ssh-agent bash 
+
+    eval ssh-agent -s
+
+    ssh-add ~/.ssh/id_rsa
+
+Then create credential again with key for the whole id_rsa
+

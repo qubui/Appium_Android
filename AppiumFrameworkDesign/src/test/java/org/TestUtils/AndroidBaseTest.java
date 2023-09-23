@@ -82,14 +82,16 @@ public class AndroidBaseTest extends AppiumUtils{
 			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			//device name
-			capabilities.setCapability("deviceName", "V2025");
-			capabilities.setCapability("platformVersion", "PD2039F_EX_A_6.21.31");
+			capabilities.setCapability("appium:deviceName", "V2025");
+			capabilities.setCapability("appium:os_version", "Funtouch OS 12 Global");
 			capabilities.setCapability("platformName", "Android");
-			capabilities.setCapability("appPackage", "com.androidsample.generalstore");
-			capabilities.setCapability("appActivity", "com.androidsample.generalstore.MainActivity");
+			capabilities.setCapability("appium:orientation", "portrait");
+			capabilities.setCapability("appium:appPackage", "com.androidsample.generalstore");
+			capabilities.setCapability("appium:appActivity", "com.androidsample.generalstore.MainActivity");
 			// Initialize the driver object with the URL to Appium Server passing the capabilities. Server Url may vary
-			capabilities.setCapability("app", app.getAbsolutePath());
-			remotedriver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+			capabilities.setCapability("appium:app", appPath);
+			driver = new AndroidDriver(new URL("http://127.0.1.1:4723/wd/hub"), capabilities);
+			//remotedriver = new RemoteWebDriver(new URL("http://127.0.1.1:4723/wd/hub"), capabilities);
 			formPage= new FormPage(driver);
 			
 		} else if (platform.contains("BrowserStack")) {

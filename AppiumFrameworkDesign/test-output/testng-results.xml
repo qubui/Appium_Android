@@ -1,46 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-20T09:41:20Z" name="Default suite" finished-at="2023-09-20T09:42:00Z" duration-ms="40106">
+  <suite started-at="2023-09-22T03:46:51Z" name="Default suite" finished-at="2023-09-22T03:46:52Z" duration-ms="758">
     <groups>
     </groups>
-    <test started-at="2023-09-20T09:41:20Z" name="Default test" finished-at="2023-09-20T09:42:00Z" duration-ms="40106">
+    <test started-at="2023-09-22T03:46:51Z" name="Default test" finished-at="2023-09-22T03:46:52Z" duration-ms="758">
       <class name="org.verifyValidateFormWithName">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-20T09:41:20Z" name="ConfigureAppium" finished-at="2023-09-20T09:41:52Z" duration-ms="31356" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-22T03:46:51Z" name="ConfigureAppium" finished-at="2023-09-22T03:46:52Z" duration-ms="731" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: 'LAPDELL-0235', ip: '192.168.1.7'
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC\AppiumFrameworkDesign//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:deviceName=V2025, appium:orientation=portrait, appium:os_version=Funtouch OS 12 Global, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}}]
+Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: 'LAPDELL-0235', ip: '192.168.1.7'
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC\AppiumFrameworkDesign//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:deviceName=V2025, appium:orientation=portrait, appium:os_version=Funtouch OS 12 Global, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}}]
+Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-20T09:41:52Z" name="preSetup" finished-at="2023-09-20T09:41:53Z" duration-ms="932" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-22T03:46:52Z" name="preSetup" finished-at="2023-09-22T03:46:52Z" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.verifyValidateFormWithName.preSetup(verifyValidateFormWithName.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="verifyValidateFormWithName(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-20T09:41:53Z" name="verifyValidateFormWithName" data-provider="getData" finished-at="2023-09-20T09:41:59Z" duration-ms="6347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Quy Bui]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Female]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Andorra]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyValidateFormWithName(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-22T03:46:52Z" name="verifyValidateFormWithName" data-provider="getData" finished-at="2023-09-22T03:46:52Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: 'LAPDELL-0235', ip: '192.168.1.7'
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC\AppiumFrameworkDesign//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:deviceName=V2025, appium:orientation=portrait, appium:os_version=Funtouch OS 12 Global, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}}]
+Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: 'LAPDELL-0235', ip: '192.168.1.7'
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC\AppiumFrameworkDesign//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:deviceName=V2025, appium:orientation=portrait, appium:os_version=Funtouch OS 12 Global, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}}]
+Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidateFormWithName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-20T09:41:59Z" name="tearDown" finished-at="2023-09-20T09:42:00Z" duration-ms="1455" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-22T03:46:52Z" name="tearDown" finished-at="2023-09-22T03:46:52Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-20T09:42:00Z" name="tearDown" finished-at="2023-09-20T09:42:00Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyValidateFormWithName@1f53a5dc]" started-at="2023-09-22T03:46:52Z" name="tearDown" finished-at="2023-09-22T03:46:52Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
