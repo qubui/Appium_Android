@@ -4,13 +4,9 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.pageObjects.android.ProductCatalogue;
 
-import static org.testng.Assert.assertTrue;
-
-import java.io.IOException;
-
 import org.TestUtils.AndroidBaseTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
+
 
 public class verifyValidateFormWithoutName extends AndroidBaseTest{
 

@@ -6,15 +6,29 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.testValidateForm">
+      <class name="org.verifyFillFormAndAddToCart">
         <methods>
-          <include name="FillFormSuccessfully"/>
+          <include name="verifyFillFormAndAddToCart"/>
           <include name="ConfigureAppium"/>
-          <include name="preSetup"/>
-          <include name="FillForm_ErrorValidation"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.testValidateForm -->
+      </class> <!-- org.verifyFillFormAndAddToCart -->
+      <class name="org.verifyValidateFormWithoutName">
+        <methods>
+          <include name="preSetup"/>
+          <include name="ConfigureAppium"/>
+          <include name="verifyValidateFormWithoutName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.verifyValidateFormWithoutName -->
+      <class name="org.verifyValidateFormWithName">
+        <methods>
+          <include name="preSetup"/>
+          <include name="ConfigureAppium"/>
+          <include name="verifyValidateFormWithName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.verifyValidateFormWithName -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

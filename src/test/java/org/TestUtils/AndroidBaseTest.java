@@ -63,11 +63,10 @@ public class AndroidBaseTest extends AppiumUtils{
 		System.out.println(platform);
 		
 		String port = prop.getProperty("port");
-		File app = new File(appPath);	
-		service = startAppiumServer(ipAddress,Integer.parseInt(port));
-		UiAutomator2Options options = new UiAutomator2Options();
-		
+				
 		if (platform.contains("Emulator")) {
+			service = startAppiumServer(ipAddress,Integer.parseInt(port));
+			UiAutomator2Options options = new UiAutomator2Options();
 			System.out.println("Run with Emulator");
 			options.setDeviceName(prop.getProperty("platform")); //emulator
 			//options.setDeviceName("Android Device");// real device		
@@ -82,16 +81,16 @@ public class AndroidBaseTest extends AppiumUtils{
 			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			//device name
-			capabilities.setCapability("appium:deviceName", "V2025");
-			capabilities.setCapability("appium:os_version", "Funtouch OS 12 Global");
+			capabilities.setCapability("appium:deviceName", "OPPO A3s");
+			capabilities.setCapability("browsername", "chrome");
+			capabilities.setCapability("appium:os_version", "8.1.0");
 			capabilities.setCapability("platformName", "Android");
 			capabilities.setCapability("appium:orientation", "portrait");
 			capabilities.setCapability("appium:appPackage", "com.androidsample.generalstore");
 			capabilities.setCapability("appium:appActivity", "com.androidsample.generalstore.MainActivity");
 			// Initialize the driver object with the URL to Appium Server passing the capabilities. Server Url may vary
-			capabilities.setCapability("appium:app", appPath);
-			driver = new AndroidDriver(new URL("http://127.0.1.1:4723/wd/hub"), capabilities);
-			//remotedriver = new RemoteWebDriver(new URL("http://127.0.1.1:4723/wd/hub"), capabilities);
+			//capabilities.setCapability("appium:app", appPath);
+			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 			formPage= new FormPage(driver);
 			
 		} else if (platform.contains("BrowserStack")) {
@@ -124,7 +123,7 @@ public class AndroidBaseTest extends AppiumUtils{
 
 
 	
-	@AfterMethod
+	//@AfterMethod
 	@AfterClass(alwaysRun=true)
 	public void tearDown()
 	{

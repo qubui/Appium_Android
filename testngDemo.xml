@@ -4,10 +4,11 @@
 	<listeners>
 		<listener class-name="org.TestUtils.Listeners"/>
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="3" name="Test">
     <classes>
-      <class name="org.TestUtils.AndroidBaseTest"/>
-      <class name="org.testValidateForm"/>
+      <class name="org.verifyFillFormAndAddToCart"/>
+      <class name="org.verifyValidateFormWithName"/>
+      <class name="org.verifyValidateFormWithoutName"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

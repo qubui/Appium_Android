@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse-1408280205\testng-customsuite.xml</span>
+                    <span>C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse--1636913616\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content skipped suite-Default_suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.verifyValidateFormWithName" class="method navigator-link" hash-for-method="verifyValidateFormWithName">verifyValidateFormWithName</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.verifyValidateFormWithoutName" class="method navigator-link" hash-for-method="verifyValidateFormWithoutName">verifyValidateFormWithoutName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Default_suite -->
@@ -120,31 +120,17 @@
           <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">org.verifyValidateFormWithName</span>
+              <span class="class-name">org.verifyValidateFormWithoutName</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyValidateFormWithName">
-                  </a> <!-- verifyValidateFormWithName -->
-                  <span class="method-name">verifyValidateFormWithName</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
-Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.7&apos;
-Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC\AppiumFrameworkDesign//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:deviceName=V2025, appium:orientation=portrait, appium:os_version=Funtouch OS 12 Global, platformName=ANDROID}], desiredCapabilities=Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}}]
-Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: com.androidsample.generalst..., appium:appPackage: com.androidsample.generalstore, appium:deviceName: V2025, appium:orientation: portrait, appium:os_version: Funtouch OS 12 Global, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+                  <a name="verifyValidateFormWithoutName">
+                  </a> <!-- verifyValidateFormWithoutName -->
+                  <span class="method-name">verifyValidateFormWithoutName</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.5&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
 	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
 	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
@@ -177,6 +163,28 @@ Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: co
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Connection refused: no further information
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$execute$4(AppiumCommandExecutor.java:262)
+	at java.base/java.util.Optional.orElseGet(Optional.java:369)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:261)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	... 32 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -186,7 +194,7 @@ Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: co
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse-1408280205\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse--1636913616\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -195,7 +203,7 @@ Capabilities {appium:app: D:\PTC_Appium_POC\AppiumFra..., appium:appActivity: co
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.verifyValidateFormWithName&quot;/&gt;
+      &lt;class name=&quot;org.verifyValidateFormWithoutName&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -237,8 +245,8 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyValidateFormWithName')
-data.setCell(0, 2, 'org.verifyValidateFormWithName')
+data.setCell(0, 1, 'verifyValidateFormWithoutName')
+data.setCell(0, 2, 'org.verifyValidateFormWithoutName')
 data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -270,7 +278,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.verifyValidateFormWithName</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.verifyValidateFormWithoutName</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <img src="failed.png">
                 </img>
@@ -281,11 +289,17 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">preSetup</span>
-                <span class="method-start">744 ms</span>
+                <span class="method-start">572 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">579 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="test-method">
-                <span class="method-name">verifyValidateFormWithName</span>
-                <span class="method-start">-1695354411651 ms</span>
+                <span class="method-name">verifyValidateFormWithoutName</span>
+                <span class="method-start">-1695722353572 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
