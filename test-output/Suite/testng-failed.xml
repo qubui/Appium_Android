@@ -8,27 +8,11 @@
     <classes>
       <class name="org.verifyFillFormAndAddToCart">
         <methods>
-          <include name="verifyFillFormAndAddToCart"/>
+          <include name="verifyFillFormAndAddToCart" invocation-numbers="0 1"/>
           <include name="ConfigureAppium"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- org.verifyFillFormAndAddToCart -->
-      <class name="org.verifyValidateFormWithoutName">
-        <methods>
-          <include name="preSetup"/>
-          <include name="ConfigureAppium"/>
-          <include name="verifyValidateFormWithoutName"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- org.verifyValidateFormWithoutName -->
-      <class name="org.verifyValidateFormWithName">
-        <methods>
-          <include name="preSetup"/>
-          <include name="ConfigureAppium"/>
-          <include name="verifyValidateFormWithName"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- org.verifyValidateFormWithName -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
