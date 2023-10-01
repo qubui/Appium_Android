@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.verifyValidateFormWithoutName">
+      <class name="org.verifyFillFormAndAddToCart">
         <methods>
-          <include name="preSetup"/>
+          <include name="verifyFillFormAndAddToCart" invocation-numbers="0 1"/>
           <include name="ConfigureAppium"/>
-          <include name="verifyValidateFormWithoutName"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.verifyValidateFormWithoutName -->
+      </class> <!-- org.verifyFillFormAndAddToCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

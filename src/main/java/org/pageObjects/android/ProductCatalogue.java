@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.utils.AndroidActions;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -15,7 +16,7 @@ public class ProductCatalogue extends AndroidActions {
 
 	AndroidDriver driver;
 	
-	@AndroidFindBy(xpath="//android.widget.TextView[@text='ADD TO CART']")
+	@AndroidFindBy(id="com.androidsample.generalstore:id/productAddCart")
 	private List<WebElement> addToCart;
 	@AndroidFindBy(id="com.androidsample.generalstore:id/appbar_btn_cart")
 	private WebElement cart;
@@ -43,7 +44,13 @@ public class ProductCatalogue extends AndroidActions {
 	
 	public void addItemToCartByIndex(int index)
 	{
-		addToCart.get(index).click();
+		try {
+			Thread.sleep(2000);
+			addToCart.get(index).click();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	
 	}
 	public CartPage goToCartPage()

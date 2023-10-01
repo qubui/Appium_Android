@@ -81,7 +81,11 @@ public abstract class AppiumUtils {
 		wait.until(ExpectedConditions.attributeContains((ele),"text" , "Cart"));
 	}
 	
-	
+	public void waitForListElementToAppear(List<WebElement> ele, AppiumDriver driver)
+	{
+		WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(5));
+		wait.until(ExpectedConditions.attributeContains((WebElement) (ele),"text" , "Cart"));
+	}
 	public String getScreenshotPath(String testCaseName, AppiumDriver driver) throws IOException
 	{
 		File source = driver.getScreenshotAs(OutputType.FILE);

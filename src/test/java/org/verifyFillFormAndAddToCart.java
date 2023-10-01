@@ -26,7 +26,6 @@ public class verifyFillFormAndAddToCart extends AndroidBaseTest{
 		formPage.setCountrySelection(input.get("country"));
 		ProductCatalogue productCatalogue = formPage.submitForm();
 		productCatalogue.addItemToCartByIndex(0);
-		productCatalogue.addItemToCartByIndex(0);
 		CartPage cartPage = productCatalogue.goToCartPage();
 		double totalSum = cartPage.getProductsSum();
 		double displayFormattedSum = cartPage.getTotalAmountDisplayed();

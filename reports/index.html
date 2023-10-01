@@ -56,7 +56,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Oct 1, 2023 11:38:28 AM</span>
+                    <span class="badge badge-primary">Oct 1, 2023 11:53:54 AM</span>
                 </a>
             </li>
         </ul>
@@ -72,7 +72,15 @@
           <span class="title">Tests</span>
         </a>
       </li>
-            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+            <li class="nav-item dropdown" onclick="toggleView('exception-view')">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -101,7 +109,7 @@
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-						
+						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
 						
@@ -114,28 +122,28 @@
 		</div>
 		<div class="test-list-wrapper scrollable">
 			<ul class="test-list-item">
-				<li class="test-item"  status="pass" test-id="1"
+				<li class="test-item"  status="fail" test-id="1"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">verifyFillFormAndAddToCart</p>
-							<p class="duration text-sm">0h 0m 15s+535ms</p>
-							<span class="datetime">11:38:38 AM</span>
+							<p class="duration text-sm">0h 0m 19s+833ms</p>
+							<span class="datetime">11:54:16 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">verifyFillFormAndAddToCart</h5>
-									<span class='badge badge-success'>10.01.2023 11:38:38</span>
-									<span class='badge badge-danger'>10.01.2023 11:38:54</span>
-									<span class='badge badge-default'>0h 0m 15s+535ms</span>
+									<h5 class="test-status text-fail">verifyFillFormAndAddToCart</h5>
+									<span class='badge badge-success'>10.01.2023 11:54:16</span>
+									<span class='badge badge-danger'>10.01.2023 11:54:36</span>
+									<span class='badge badge-default'>0h 0m 19s+833ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -151,39 +159,100 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:38:54 AM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:54:36 AM</td>
 				<td>
-						Test Passed
+						Test Failed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:54:36 AM</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:459)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
+	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(<generated>)
+	at org.pageObjects.android.ProductCatalogue.addItemToCartByIndex(ProductCatalogue.java:46)
+	at org.verifyFillFormAndAddToCart.verifyFillFormAndAddToCart(verifyFillFormAndAddToCart.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
 </div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png' src='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png'>
+			</a>
+		</li>
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png' src='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png'>
+			</a>
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
-				<li class="test-item"  status="pass" test-id="2"
+				<li class="test-item"  status="fail" test-id="2"
 					author=""
 					tag=""
 					device="">
-					<div class="status-avatar pass-bg">
-						<i class="fa fa-check text-white"></i>
+					<div class="status-avatar fail-bg">
+						<i class="fa fa-times text-white"></i>
 					</div>
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">verifyFillFormAndAddToCart</p>
-							<p class="duration text-sm">0h 0m 13s+977ms</p>
-							<span class="datetime">11:38:54 AM</span>
+							<p class="duration text-sm">0h 0m 19s+325ms</p>
+							<span class="datetime">11:54:53 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="detail-head">
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
-									<h5 class="test-status text-pass">verifyFillFormAndAddToCart</h5>
-									<span class='badge badge-success'>10.01.2023 11:38:54</span>
-									<span class='badge badge-danger'>10.01.2023 11:39:08</span>
-									<span class='badge badge-default'>0h 0m 13s+977ms</span>
+									<h5 class="test-status text-fail">verifyFillFormAndAddToCart</h5>
+									<span class='badge badge-success'>10.01.2023 11:54:53</span>
+									<span class='badge badge-danger'>10.01.2023 11:55:13</span>
+									<span class='badge badge-default'>0h 0m 19s+325ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -199,14 +268,75 @@
 	</tr></thead>
 	<tbody>
 			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:39:08 AM</td>
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:55:13 AM</td>
 				<td>
-						Test Passed
+						Test Failed
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:55:13 AM</td>
+				<td>
+						<textarea disabled class="code-block">java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:459)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.pagefactory.ElementListInterceptor.getObject(ElementListInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfAListOfElements.intercept(InterceptorOfAListOfElements.java:49)
+	at $java.util.ArrayList$$EnhancerByCGLIB$$b5855c01.get(<generated>)
+	at org.pageObjects.android.ProductCatalogue.addItemToCartByIndex(ProductCatalogue.java:46)
+	at org.verifyFillFormAndAddToCart.verifyFillFormAndAddToCart(verifyFillFormAndAddToCart.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
 				</td>
 			</tr>
 	</tbody>
 </table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png' src='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png'>
+			</a>
+		</li>
+		<li>
+			<a href="#" data-featherlight="image">
+				<img class='r-img' onerror='this.style.display="none"' data-featherlight='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png' src='D:\PTC_Appium_POC\reports\verifyFillFormAndAddToCart.png'>
+			</a>
+		</li>
+	</ul>
 </div>
 					</div>
 				</li>
@@ -220,8 +350,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">verifyValidateFormWithName</p>
-							<p class="duration text-sm">0h 0m 5s+961ms</p>
-							<span class="datetime">11:39:16 AM</span>
+							<p class="duration text-sm">0h 0m 12s+482ms</p>
+							<span class="datetime">11:55:54 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -229,9 +359,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">verifyValidateFormWithName</h5>
-									<span class='badge badge-success'>10.01.2023 11:39:16</span>
-									<span class='badge badge-danger'>10.01.2023 11:39:22</span>
-									<span class='badge badge-default'>0h 0m 5s+961ms</span>
+									<span class='badge badge-success'>10.01.2023 11:55:54</span>
+									<span class='badge badge-danger'>10.01.2023 11:56:07</span>
+									<span class='badge badge-default'>0h 0m 12s+482ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -248,7 +378,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:39:22 AM</td>
+				<td>11:56:07 AM</td>
 				<td>
 						Test Passed
 				</td>
@@ -268,8 +398,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">verifyValidateFormWithoutName</p>
-							<p class="duration text-sm">0h 0m 4s+602ms</p>
-							<span class="datetime">11:39:29 AM</span>
+							<p class="duration text-sm">0h 0m 8s+881ms</p>
+							<span class="datetime">11:56:29 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -277,9 +407,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-pass">verifyValidateFormWithoutName</h5>
-									<span class='badge badge-success'>10.01.2023 11:39:29</span>
-									<span class='badge badge-danger'>10.01.2023 11:39:34</span>
-									<span class='badge badge-default'>0h 0m 4s+602ms</span>
+									<span class='badge badge-success'>10.01.2023 11:56:29</span>
+									<span class='badge badge-danger'>10.01.2023 11:56:38</span>
+									<span class='badge badge-default'>0h 0m 8s+881ms</span>
 								</div>
 								<div class="m-t-10 m-l-5">
 									
@@ -296,7 +426,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:39:34 AM</td>
+				<td>11:56:38 AM</td>
 				<td>
 						Test Passed
 				</td>
@@ -304,6 +434,89 @@
 	</tbody>
 </table>
 </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div><div class="test-wrapper row exception-view attributes-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Exception</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li>
+					<a href="#">
+					<span class="badge badge-primary">1</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item">
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">java.lang.IndexOutOfBoundsException</p>
+							<p class="duration text-sm">2 tests</p>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="info">
+							<h4>java.lang.IndexOutOfBoundsException</h4>
+						</div>
+						<table class='table table-sm mt-4'>
+							<thead>
+								<tr>
+									<th class="status-col">Status</th>
+									<th class="timestamp-col">Timestamp</th>
+									<th>TestName</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>11:54:16 AM</td>
+									<td class='linked' test-id='1'>
+										verifyFillFormAndAddToCart
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>11:54:53 AM</td>
+									<td class='linked' test-id='2'>
+										verifyFillFormAndAddToCart
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</li>
 			</ul>
@@ -337,12 +550,12 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'>
-						<b>4</b> tests passed
+					<div><small data-tooltip='50%'>
+						<b>2</b> tests passed
 						</small>
 					</div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<small data-tooltip='50%'><b>2</b> tests failed, 
 						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -360,9 +573,9 @@
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='100%'><b>4</b> events passed</small></div>
+					<div><small data-tooltip='33.333%'><b>2</b> events passed</small></div>
 					<div>
-						<small data-tooltip='0%'><b>0</b> events failed, 
+						<small data-tooltip='66.667%'><b>4</b> events failed, 
 						<b data-tooltip='0%'>0</b> others
 						</small>
 					</div>
@@ -380,7 +593,7 @@
 							<h2 class="font-size-28 font-weight-light mt-3">4</h2>
 							<span class="text-semibold text-success font-size-15">
 							<i class="ti-arrow-up font-size-11"></i> 
-							<span>100.00%</span>
+							<span>50.00%</span>
 							</span>
 						</div>
 						<div class="align-self-end">
@@ -396,7 +609,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Oct 1, 2023 11:38:28 AM</h4>
+							<h4 class="font-weight-light mt-4">Oct 1, 2023 11:53:54 AM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -412,7 +625,7 @@
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 5s+747ms</h4>
+							<h4 class="font-weight-light mt-4">0h 2m 46s+447ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -466,13 +679,13 @@
 <script>
 	var statusGroup = {
 	    parentCount: 4,
-		passParent: 4,
-		failParent: 0,
+		passParent: 2,
+		failParent: 2,
 		fatalParent: 0,
 		errorParent: 0,
 		warningParent: 0,
 		skipParent: 0,
-		exceptionsParent: 0,
+		exceptionsParent: 2,
 		childCount: 0,
 		passChild: 0,
 		failChild: 0,
@@ -493,9 +706,9 @@
 		infoGrandChild: 0,
 		debugGrandChild: 0,
 		exceptionsGrandChild: 0,
-		eventsCount: 4,
-		passEvents: 4,
-		failEvents: 0,
+		eventsCount: 6,
+		passEvents: 2,
+		failEvents: 4,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
@@ -507,7 +720,7 @@
 </script>
 <script>
 	var timeline = {
-	        "verifyFillFormAndAddToCart":15.535,"verifyFillFormAndAddToCart":13.977,"verifyValidateFormWithName":5.961,"verifyValidateFormWithoutName":4.602
+	        "verifyFillFormAndAddToCart":19.833,"verifyFillFormAndAddToCart":19.325,"verifyValidateFormWithName":12.482,"verifyValidateFormWithoutName":8.881
 	};
 </script>
                 </div>

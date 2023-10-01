@@ -33,6 +33,9 @@ public class CartPage extends AndroidActions {
 	@AndroidFindBy(id="android:id/button1")
 	public WebElement acceptButton;
 	
+	@AndroidFindBy(xpath="//android.widget.Toast[1]")
+	private WebElement messageAddCartWithoutProduct;
+
 	@AndroidFindBy(id="com.androidsample.generalstore:id/btnProceed")
 	public WebElement proceed;
 	
@@ -59,6 +62,38 @@ public class CartPage extends AndroidActions {
 		return totalSum;
 	}
 	
+	public Boolean isTermsDisplay() 
+	
+	{
+		Boolean terms =  getTerms().isDisplayed();
+		return terms;
+
+	}
+	
+	public Boolean isSubmitOrderButtonDisplay() 
+	
+	{
+		Boolean acceptButton =  getAcceptButton().isDisplayed();
+		return acceptButton;
+
+	}
+	
+	public WebElement getTotalAmount() {
+		return totalAmount;
+	}
+
+	public WebElement getTerms() {
+		return terms;
+	}
+
+	public WebElement getAcceptButton() {
+		return acceptButton;
+	}
+
+	public WebElement getProceed() {
+		return proceed;
+	}
+
 	public Double getTotalAmountDisplayed()
 	{
 		return getFormattedAmount(totalAmount.getText());
@@ -66,8 +101,7 @@ public class CartPage extends AndroidActions {
 	
 	public void acceptTermsConditions()
 	{
-		longPressAction(terms);
-		acceptButton.click();
+		checkBox.click();
 	}
 	
 
@@ -75,6 +109,17 @@ public class CartPage extends AndroidActions {
 	{
 		checkBox.click();
 		proceed.click();
+	}
+	
+
+	public WebElement getMessageAddCartWithoutProduct() {
+		return messageAddCartWithoutProduct;
+	}
+	
+	public String getTextMessageAddCartWithoutProduct()
+	{
+		waitForElementToAppear(messageAddCartWithoutProduct, driver);
+		return messageAddCartWithoutProduct.getText();
 	}
 	
 	
