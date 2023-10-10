@@ -123,6 +123,7 @@ public class AndroidBaseTest extends AppiumUtils{
 		    caps.setCapability("appium:os_version", os_version);
 		    caps.setCapability("bstack:options", browserstackOptions);
 		    caps.setCapability("noReset", true);
+		    
 		    driver = new AndroidDriver(remoteUrl, caps);		    
 		    formPage= new FormPage(driver);
 		}	
@@ -130,6 +131,7 @@ public class AndroidBaseTest extends AppiumUtils{
 	}
 	
 	
+
 
 
 	

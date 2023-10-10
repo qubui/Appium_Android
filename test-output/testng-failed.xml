@@ -6,6 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="org.verifyValidateFormWithoutName">
+        <methods>
+          <include name="preSetup"/>
+          <include name="ConfigureAppium"/>
+          <include name="verifyValidateFormWithoutName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.verifyValidateFormWithoutName -->
+      <class name="org.verifyValidateFormWithName">
+        <methods>
+          <include name="preSetup"/>
+          <include name="ConfigureAppium"/>
+          <include name="verifyValidateFormWithName"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.verifyValidateFormWithName -->
       <class name="org.verifyFillFormAndAddToCart">
         <methods>
           <include name="verifyFillFormAndAddToCart"/>

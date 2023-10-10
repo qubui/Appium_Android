@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,36 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.verifyFillFormAndAddToCart" class="method navigator-link" hash-for-method="verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})">verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.verifyFillFormAndAddToCart" class="method navigator-link" hash-for-method="verifyFillFormAndAddToCart">verifyFillFormAndAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.verifyFillFormAndAddToCart" class="method navigator-link" hash-for-method="verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})">verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.verifyFillFormAndAddToCart" class="method navigator-link" hash-for-method="verifyFillFormAndAddToCart">verifyFillFormAndAddToCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.verifyValidateFormWithName" class="method navigator-link" hash-for-method="verifyValidateFormWithName(Quy Bui, Female, Andorra)">verifyValidateFormWithName(Quy Bui, Female, Andorra)</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.verifyValidateFormWithName" class="method navigator-link" hash-for-method="verifyValidateFormWithName">verifyValidateFormWithName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="org.verifyValidateFormWithoutName" class="method navigator-link" hash-for-method="verifyValidateFormWithoutName">verifyValidateFormWithoutName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,9 +132,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">org.verifyValidateFormWithoutName</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,50 +143,73 @@
                   <a name="verifyValidateFormWithoutName">
                   </a> <!-- verifyValidateFormWithoutName -->
                   <span class="method-name">verifyValidateFormWithoutName</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.verifyValidateFormWithoutName.preSetup(verifyValidateFormWithoutName.java:18)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">org.verifyValidateFormWithName</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyValidateFormWithName(Quy Bui, Female, Andorra)">
-                  </a> <!-- verifyValidateFormWithName(Quy Bui, Female, Andorra) -->
+                  <a name="verifyValidateFormWithName">
+                  </a> <!-- verifyValidateFormWithName -->
                   <span class="method-name">verifyValidateFormWithName</span>
-                  <span class="parameters">(Quy Bui, Female, Andorra)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.verifyValidateFormWithName.preSetup(verifyValidateFormWithName.java:23)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">org.verifyFillFormAndAddToCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})">
-                  </a> <!-- verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female}) -->
+                  <a name="verifyFillFormAndAddToCart">
+                  </a> <!-- verifyFillFormAndAddToCart -->
                   <span class="method-name">verifyFillFormAndAddToCart</span>
-                  <span class="parameters">({name=Quy Bui1, country=Argentina, gender=Female})</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(Ljava/net/URI;Ljava/time/Duration;Ljava/time/Duration;Lorg/openqa/selenium/remote/http/Filter;Ljava/net/Proxy;Lorg/openqa/selenium/Credentials;)V
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:62)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:79)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:98)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})">
-                  </a> <!-- verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male}) -->
+                  <a name="verifyFillFormAndAddToCart">
+                  </a> <!-- verifyFillFormAndAddToCart -->
                   <span class="method-name">verifyFillFormAndAddToCart</span>
-                  <span class="parameters">({name=Quy Bui2, country=Argentina, gender=male})</span>
+                  <div class="stack-trace">java.lang.NoSuchMethodError: org.openqa.selenium.remote.http.ClientConfig.&lt;init&gt;(Ljava/net/URI;Ljava/time/Duration;Ljava/time/Duration;Lorg/openqa/selenium/remote/http/Filter;Ljava/net/Proxy;Lorg/openqa/selenium/Credentials;)V
+	at io.appium.java_client.AppiumClientConfig.&lt;init&gt;(AppiumClientConfig.java:62)
+	at io.appium.java_client.AppiumClientConfig.defaultConfig(AppiumClientConfig.java:79)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:98)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -246,26 +269,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyFillFormAndAddToCart')
-data.setCell(0, 2, 'org.verifyFillFormAndAddToCart')
-data.setCell(0, 3, 21542);
+data.setCell(0, 1, 'verifyValidateFormWithoutName')
+data.setCell(0, 2, 'org.verifyValidateFormWithoutName')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyFillFormAndAddToCart')
 data.setCell(1, 2, 'org.verifyFillFormAndAddToCart')
-data.setCell(1, 3, 18616);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyValidateFormWithName')
 data.setCell(2, 2, 'org.verifyValidateFormWithName')
-data.setCell(2, 3, 8411);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyValidateFormWithoutName')
-data.setCell(3, 2, 'org.verifyValidateFormWithoutName')
-data.setCell(3, 3, 5753);
+data.setCell(3, 1, 'verifyFillFormAndAddToCart')
+data.setCell(3, 2, 'org.verifyFillFormAndAddToCart')
+data.setCell(3, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -292,65 +315,84 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">org.verifyFillFormAndAddToCart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyFillFormAndAddToCart</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFillFormAndAddToCart</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.verifyValidateFormWithName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyValidateFormWithName</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.verifyValidateFormWithoutName</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyValidateFormWithoutName</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.verifyFillFormAndAddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ConfigureAppium</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})</span>
-                <span class="method-start">18150 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})</span>
-                <span class="method-start">39696 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58313 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.verifyValidateFormWithName</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ConfigureAppium</span>
-                <span class="method-start">58704 ms</span>
+                <span class="method-start">212 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">preSetup</span>
-                <span class="method-start">69627 ms</span>
+                <span class="method-start">216 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyValidateFormWithName(Quy Bui, Female, Andorra)</span>
-                <span class="method-start">71087 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79499 ms</span>
+                <span class="method-start">224 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.verifyValidateFormWithoutName</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ConfigureAppium</span>
-                <span class="method-start">79868 ms</span>
+                <span class="method-start">226 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">preSetup</span>
-                <span class="method-start">90679 ms</span>
+                <span class="method-start">230 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyValidateFormWithoutName</span>
-                <span class="method-start">92153 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">97907 ms</span>
+                <span class="method-start">232 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
