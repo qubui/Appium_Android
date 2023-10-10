@@ -32,6 +32,7 @@ import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -80,18 +81,23 @@ public class AndroidBaseTest extends AppiumUtils{
 			System.out.println("Run with Android Real Device");
 			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
+	        capabilities.setCapability("no",true);
+	        capabilities.setCapability("newCommandTimeout", 100000);
+	        capabilities.setCapability("noReset", true);
 			//device name
-			capabilities.setCapability("appium:deviceName", "OPPO A3s");
+			capabilities.setCapability("deviceName", "OPPO A3s");
 			capabilities.setCapability("browsername", "chrome");
-			capabilities.setCapability("appium:os_version", "8.1.0");
+			capabilities.setCapability("os_version", "8.1.0");
 			capabilities.setCapability("platformName", "Android");
-			capabilities.setCapability("appium:orientation", "portrait");
-			capabilities.setCapability("appium:appPackage", "com.androidsample.generalstore");
-			capabilities.setCapability("appium:appActivity", "com.androidsample.generalstore.MainActivity");
+			//capabilities.setCapability("orientation", "portrait");
+			capabilities.setCapability("appPackage", "com.androidsample.generalstore");
+			capabilities.setCapability("appActivity", "com.androidsample.generalstore.MainActivity");
 			// Initialize the driver object with the URL to Appium Server passing the capabilities. Server Url may vary
-			//capabilities.setCapability("appium:app", appPath);
-			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+			capabilities.setCapability("app", appPath);
+			capabilities.setCapability("noRest", true);
+			driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
 			formPage= new FormPage(driver);
+			
 			
 		} else if (platform.contains("BrowserStack")) {
 			System.out.println("Run with BrowserStack");
@@ -107,13 +113,17 @@ public class AndroidBaseTest extends AppiumUtils{
 			HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
             browserstackOptions.put("userName",userName );
             browserstackOptions.put("accessKey", accessKey);
-            browserstackOptions.put("buildName", "Demo_Appium_For_Android");          
+            browserstackOptions.put("buildName", "Demo_Appium_For_Android");
+            caps.setCapability("no",true);
+            caps.setCapability("newCommandTimeout", 100000);
+            caps.setCapability("noReset", true);
 		    caps.setCapability("appium:app", appApi);
 		    caps.setCapability("appium:deviceName", deviceName);
 		    caps.setCapability("platformName", platformName);
 		    caps.setCapability("appium:os_version", os_version);
 		    caps.setCapability("bstack:options", browserstackOptions);
-		    driver = new AndroidDriver(remoteUrl, caps);
+		    caps.setCapability("noReset", true);
+		    driver = new AndroidDriver(remoteUrl, caps);		    
 		    formPage= new FormPage(driver);
 		}	
 

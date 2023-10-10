@@ -8,7 +8,7 @@
     <classes>
       <class name="org.verifyFillFormAndAddToCart">
         <methods>
-          <include name="verifyFillFormAndAddToCart" invocation-numbers="0 1"/>
+          <include name="verifyFillFormAndAddToCart"/>
           <include name="ConfigureAppium"/>
           <include name="tearDown"/>
         </methods>
