@@ -23,13 +23,13 @@
     <dependency>
     <groupId>io.appium</groupId>
     <artifactId>java-client</artifactId>
-    <version>8.5.0</version>
+    <version>8.6.0</version>
 </dependency>
 
 <dependency>
 	<groupId>org.seleniumhq.selenium</groupId>
 	<artifactId>selenium-java</artifactId>
-	<version>4.0.0-beta-3</version>
+	<version>4.9.1</version>
 </dependency>
 
 <dependency>
