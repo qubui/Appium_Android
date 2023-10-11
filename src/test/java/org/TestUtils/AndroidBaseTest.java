@@ -138,8 +138,8 @@ public class AndroidBaseTest extends AppiumUtils{
 	public void tearDown()
 	{
 		driver.quit();
-		driver.close();
         service.stop();
+        driver.close();
 	}
 		
 }
