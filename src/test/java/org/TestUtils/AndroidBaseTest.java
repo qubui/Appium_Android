@@ -45,7 +45,7 @@ public class AndroidBaseTest extends AppiumUtils{
 	
 	
 	public AndroidDriver driver;
-	public RemoteWebDriver remotedriver;
+	//public RemoteWebDriver remotedriver;
 	public AppiumDriverLocalService service;
 	public FormPage formPage;
 
