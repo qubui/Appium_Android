@@ -3,9 +3,12 @@ package org.TestUtils;
 import java.io.IOException;
 
 import org.utils.AppiumUtils;
+import org.testng.IInvokedMethod;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import org.testng.IInvokedMethodListener;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -33,6 +36,15 @@ public class Listeners extends AppiumUtils implements ITestListener{
 		
 	}
 
+	public void afterInvocation(IInvokedMethod method, ITestResult result) {
+	System.out.println("This method is invoked after every config method - " + method.getTestMethod().getMethodName());
+
+	}
+	
+	public void beforeInvocation(IInvokedMethod method, ITestResult result) {
+		System.out.println("This method is invoked before every config method - " + method.getTestMethod().getMethodName());
+	}
+	
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub

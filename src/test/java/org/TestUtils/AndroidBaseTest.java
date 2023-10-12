@@ -44,7 +44,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AndroidBaseTest extends AppiumUtils{
 	
 	
-	public AndroidDriver driver;
+	public static  AndroidDriver driver;
 	//public RemoteWebDriver remotedriver;
 	public AppiumDriverLocalService service;
 	public FormPage formPage;
@@ -150,7 +150,7 @@ public class AndroidBaseTest extends AppiumUtils{
 		driver.quit();
 		}
 		service.stop();
-		driver.close();
+		//driver.close();
         
 	}
 		

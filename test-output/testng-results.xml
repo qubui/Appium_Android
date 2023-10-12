@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-12T10:33:26 ICT" name="Default suite" finished-at="2023-10-12T10:33:50 ICT" duration-ms="23749">
+  <suite started-at="2023-10-12T10:57:47 ICT" name="Default suite" finished-at="2023-10-12T10:58:11 ICT" duration-ms="24289">
     <groups>
     </groups>
-    <test started-at="2023-10-12T10:33:26 ICT" name="Default test" finished-at="2023-10-12T10:33:50 ICT" duration-ms="23749">
+    <test started-at="2023-10-12T10:57:47 ICT" name="Default test" finished-at="2023-10-12T10:58:11 ICT" duration-ms="24289">
       <class name="org.verifyValidateFormWithName">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:33:26 ICT" name="ConfigureAppium" finished-at="2023-10-12T10:33:40 ICT" duration-ms="13188" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:57:47 ICT" name="ConfigureAppium" finished-at="2023-10-12T10:58:00 ICT" duration-ms="12369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:33:40 ICT" name="preSetup" finished-at="2023-10-12T10:33:41 ICT" duration-ms="1678" status="PASS">
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:58:00 ICT" name="preSetup" finished-at="2023-10-12T10:58:01 ICT" duration-ms="1693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preSetup -->
-        <test-method signature="verifyValidateFormWithName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:33:41 ICT" name="verifyValidateFormWithName" data-provider="getData" finished-at="2023-10-12T10:33:50 ICT" duration-ms="8422" status="PASS">
+        <test-method signature="verifyValidateFormWithName(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:58:01 ICT" name="verifyValidateFormWithName" data-provider="getData" finished-at="2023-10-12T10:58:11 ICT" duration-ms="9734" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,11 +36,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidateFormWithName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:33:50 ICT" name="tearDown" finished-at="2023-10-12T10:33:50 ICT" duration-ms="415" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyValidateFormWithName@6a8658ff]" started-at="2023-10-12T10:58:11 ICT" name="tearDown" finished-at="2023-10-12T10:58:11 ICT" duration-ms="454" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at org.TestUtils.AndroidBaseTest.tearDown(AndroidBaseTest.java:147)
+at org.TestUtils.AndroidBaseTest.tearDown(AndroidBaseTest.java:152)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
