@@ -1,6 +1,7 @@
 package org.TestUtils;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -134,7 +135,7 @@ public class AndroidBaseTest extends AppiumUtils{
 
 
 	
-	@AfterMethod
+	@AfterTest
 	//@AfterClass(alwaysRun=true)
 	public void tearDown()
 	{
@@ -143,7 +144,6 @@ public class AndroidBaseTest extends AppiumUtils{
 		if (driver != null)
 		{
 		driver.quit();
-		driver.close();
 		}
         
 	}
