@@ -75,7 +75,9 @@ public class AndroidBaseTest extends AppiumUtils{
 			//options.setDeviceName("Android Device");// real device		
 			options.setChromedriverExecutable(chromeDriverPath);	
 			options.setApp(appPath);	
-			
+			options.setCapability("no",true);
+			options.setCapability("newCommandTimeout", 100000);
+			options.setCapability("noReset", true);
 			driver = new AndroidDriver(service.getUrl(), options);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			formPage= new FormPage(driver);
@@ -96,13 +98,8 @@ public class AndroidBaseTest extends AppiumUtils{
 			capabilities.setCapability("appActivity", "com.androidsample.generalstore.MainActivity");
 			// Initialize the driver object with the URL to Appium Server passing the capabilities. Server Url may vary
 			capabilities.setCapability("app", appPath);
-			capabilities.setCapability("noRest", true);
-			try {
-				driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-			} catch(Exception e) {
-			    System.out.println(e);
-			}
-			
+			capabilities.setCapability("noRest", true);			
+			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);			
 			formPage= new FormPage(driver);
 			
 			
