@@ -143,7 +143,7 @@ public class AndroidBaseTest extends AppiumUtils{
 		System.out.println("Print driver: " + driver);
 		if (driver != null)
 		{
-		driver.quit();
+		driver.close();
 		}
         
 	}
