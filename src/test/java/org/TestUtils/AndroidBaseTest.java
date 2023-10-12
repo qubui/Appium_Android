@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.sql.Driver;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Properties;
@@ -137,11 +138,11 @@ public class AndroidBaseTest extends AppiumUtils{
 	@AfterClass(alwaysRun=true)
 	public void tearDown()
 	{
+		service.stop();
+		System.out.println("Print driver: " + driver);
 		if (driver != null)
 		{
 		driver.quit();	
-		service.stop();
-		driver.close();
 		}
         
 	}
