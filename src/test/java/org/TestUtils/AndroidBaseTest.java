@@ -137,9 +137,13 @@ public class AndroidBaseTest extends AppiumUtils{
 	@AfterClass(alwaysRun=true)
 	public void tearDown()
 	{
-		driver.quit();
-        service.stop();
-        driver.close();
+		if (driver != null)
+		{
+		driver.quit();	
+		service.stop();
+		driver.close();
+		}
+        
 	}
 		
 }
