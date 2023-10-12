@@ -145,14 +145,13 @@ public class AndroidBaseTest extends AppiumUtils{
 	public void tearDown()
 	{		
 		System.out.println("Print driver: " + driver);
-		service.stop();
-//		if (driver != null)
-//		{
-		driver.close();
-		//}
 		
-		//driver.close();
-        
+		try {
+			  driver.quit();
+		      service.stop();
+		} catch(Exception e) {
+		    System.out.println(e);
+		}
 	}
 		
 }
