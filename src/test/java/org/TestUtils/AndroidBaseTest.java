@@ -97,7 +97,12 @@ public class AndroidBaseTest extends AppiumUtils{
 			// Initialize the driver object with the URL to Appium Server passing the capabilities. Server Url may vary
 			capabilities.setCapability("app", appPath);
 			capabilities.setCapability("noRest", true);
-			driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+			try {
+				driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+			} catch(Exception e) {
+			    System.out.println(e);
+			}
+			
 			formPage= new FormPage(driver);
 			
 			
