@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-27T15:53:23 ICT" name="Default suite" finished-at="2023-11-27T15:54:43 ICT" duration-ms="79688">
+  <suite started-at="2023-11-27T18:06:13 ICT" name="Default suite" finished-at="2023-11-27T18:07:29 ICT" duration-ms="76145">
     <groups>
     </groups>
-    <test started-at="2023-11-27T15:53:23 ICT" name="Default test" finished-at="2023-11-27T15:54:43 ICT" duration-ms="79688">
+    <test started-at="2023-11-27T18:06:13 ICT" name="Default test" finished-at="2023-11-27T18:07:29 ICT" duration-ms="76145">
       <class name="org.verifyFillFormAndAddToCart">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T15:53:23 ICT" name="ConfigureAppium" finished-at="2023-11-27T15:53:58 ICT" duration-ms="34792" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T18:06:13 ICT" name="ConfigureAppium" finished-at="2023-11-27T18:06:35 ICT" duration-ms="22151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="verifyFillFormAndAddToCart(java.util.HashMap)[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T15:53:58 ICT" name="verifyFillFormAndAddToCart" data-provider="getData" finished-at="2023-11-27T15:54:23 ICT" duration-ms="24341" status="PASS">
+        <test-method signature="verifyFillFormAndAddToCart(java.util.HashMap)[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T18:06:36 ICT" name="verifyFillFormAndAddToCart" data-provider="getData" finished-at="2023-11-27T18:07:03 ICT" duration-ms="27703" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFillFormAndAddToCart -->
-        <test-method signature="verifyFillFormAndAddToCart(java.util.HashMap)[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T15:54:23 ICT" name="verifyFillFormAndAddToCart" data-provider="getData" finished-at="2023-11-27T15:54:42 ICT" duration-ms="19871" status="PASS">
+        <test-method signature="verifyFillFormAndAddToCart(java.util.HashMap)[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T18:07:03 ICT" name="verifyFillFormAndAddToCart" data-provider="getData" finished-at="2023-11-27T18:07:28 ICT" duration-ms="24365" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFillFormAndAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T15:54:42 ICT" name="tearDown" finished-at="2023-11-27T15:54:43 ICT" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.verifyFillFormAndAddToCart@33ecda92]" started-at="2023-11-27T18:07:28 ICT" name="tearDown" finished-at="2023-11-27T18:07:29 ICT" duration-ms="1541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

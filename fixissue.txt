@@ -10,3 +10,7 @@ https://intellipaat.com/community/21224/git-bash-could-not-open-a-connection-to-
 
 Then create credential again with key for the whole id_rsa
 
+
+
+https://www.browserstack.com/docs/app-automate/appium/getting-started/java/integrate-your-tests
+

@@ -127,12 +127,12 @@ public class AndroidBaseTest extends AppiumUtils{
             browserstackOptions.put("buildName", "Demo_Appium_For_Android");
             caps.setCapability("no",true);
             caps.setCapability("newCommandTimeout", 100000);
-            caps.setCapability("noReset", true);
 		    caps.setCapability("appium:app", appApi);
 		    caps.setCapability("appium:deviceName", deviceName);
 		    caps.setCapability("platformName", platformName);
 		    caps.setCapability("appium:os_version", os_version);
 		    caps.setCapability("bstack:options", browserstackOptions);
+		    //caps.setCapability("appium:browsername", "chrome");
 		    caps.setCapability("noReset", true);
 		    driver = new AndroidDriver(remoteUrl, caps);		    
 		    formPage= new FormPage(driver);
