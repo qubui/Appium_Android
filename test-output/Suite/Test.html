@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 11 13:59:13 ICT 2023</td>
+<td>Started on:</td><td>Mon Nov 27 15:16:03 ICT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>58 seconds (58972 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (981 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,33 +67,570 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.verifyValidateFormWithoutName.preSetup()'><b>preSetup</b><br>Test class: org.verifyValidateFormWithoutName</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithoutName.preSetup(verifyValidateFormWithoutName.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1765350920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765350920'><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithoutName.preSetup(verifyValidateFormWithoutName.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyValidateFormWithoutName@65b104b9</td></tr>
+<tr>
+<td title='org.verifyFillFormAndAddToCart.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: org.verifyFillFormAndAddToCart</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398241764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398241764'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyFillFormAndAddToCart@413f69cc</td></tr>
+<tr>
+<td title='org.verifyValidateFormWithoutName.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: org.verifyValidateFormWithoutName</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373299466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace373299466'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyValidateFormWithoutName@65b104b9</td></tr>
+<tr>
+<td title='org.verifyValidateFormWithName.preSetup()'><b>preSetup</b><br>Test class: org.verifyValidateFormWithName</td>
+<td><div><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithName.preSetup(verifyValidateFormWithName.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace382044126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace382044126'><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithName.preSetup(verifyValidateFormWithName.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyValidateFormWithName@3403e2ac</td></tr>
+<tr>
+<td title='org.verifyValidateFormWithName.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: org.verifyValidateFormWithName</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1577353545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1577353545'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyValidateFormWithName@3403e2ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
 <td title='org.verifyFillFormAndAddToCart.verifyFillFormAndAddToCart()'><b>verifyFillFormAndAddToCart</b><br>Test class: org.verifyFillFormAndAddToCart<br>Parameters: {name=Quy Bui1, country=Argentina, gender=Female}</td>
-<td></td>
-<td>13</td>
-<td>org.verifyFillFormAndAddToCart@119020fb</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173115411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace173115411'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyFillFormAndAddToCart@413f69cc</td></tr>
 <tr>
 <td title='org.verifyFillFormAndAddToCart.verifyFillFormAndAddToCart()'><b>verifyFillFormAndAddToCart</b><br>Test class: org.verifyFillFormAndAddToCart<br>Parameters: {name=Quy Bui2, country=Argentina, gender=male}</td>
-<td></td>
-<td>12</td>
-<td>org.verifyFillFormAndAddToCart@119020fb</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137935956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1137935956'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 404. Message: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource 
+Host info: host: &apos;LAPDELL-0235&apos;, ip: &apos;192.168.1.3&apos;
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.20&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\PTC_Appium_POC//src//test//java//org//resources//General-Store.apk, appium:appActivity=com.androidsample.generalstore.MainActivity, appium:appPackage=com.androidsample.generalstore, appium:browsername=chrome, appium:deviceName=OPPO A3s, appium:newCommandTimeout=100000, appium:no=true, appium:noReset=true, appium:noRest=true, appium:os_version=8.1.0, platformName=ANDROID}], desiredCapabilities=Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}}]
+Capabilities {app: D:\PTC_Appium_POC//src//tes..., appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, browsername: chrome, deviceName: OPPO A3s, newCommandTimeout: 100000, no: true, noReset: true, noRest: true, os_version: 8.1.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.TestUtils.AndroidBaseTest.ConfigureAppium(AndroidBaseTest.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyFillFormAndAddToCart@413f69cc</td></tr>
 <tr>
 <td title='org.verifyValidateFormWithName.verifyValidateFormWithName()'><b>verifyValidateFormWithName</b><br>Test class: org.verifyValidateFormWithName<br>Parameters: Quy Bui, Female, Andorra</td>
-<td></td>
-<td>6</td>
-<td>org.verifyValidateFormWithName@3d9f6567</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithName.preSetup(verifyValidateFormWithName.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace720638621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace720638621'><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithName.preSetup(verifyValidateFormWithName.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyValidateFormWithName@3403e2ac</td></tr>
 <tr>
 <td title='org.verifyValidateFormWithoutName.verifyValidateFormWithoutName()'><b>verifyValidateFormWithoutName</b><br>Test class: org.verifyValidateFormWithoutName</td>
-<td></td>
-<td>4</td>
-<td>org.verifyValidateFormWithoutName@c055c54</td></tr>
+<td><div><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithoutName.preSetup(verifyValidateFormWithoutName.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1689498062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1689498062'><pre>java.lang.NullPointerException
+	at org.verifyValidateFormWithoutName.preSetup(verifyValidateFormWithoutName.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>org.verifyValidateFormWithoutName@65b104b9</td></tr>
 </table><p>
 </body>
 </html>

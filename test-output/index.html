@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse--335487673\testng-customsuite.xml</span>
+                    <span>C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse-649343921\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.verifyValidateFormWithName" class="method navigator-link" hash-for-method="verifyValidateFormWithName(Quy Bui, Female, Andorra)">verifyValidateFormWithName(Quy Bui, Female, Andorra)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.verifyFillFormAndAddToCart" class="method navigator-link" hash-for-method="verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})">verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="org.verifyFillFormAndAddToCart" class="method navigator-link" hash-for-method="verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})">verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,15 +126,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.verifyValidateFormWithName</span>
+              <span class="class-name">org.verifyFillFormAndAddToCart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyValidateFormWithName(Quy Bui, Female, Andorra)">
-                  </a> <!-- verifyValidateFormWithName(Quy Bui, Female, Andorra) -->
-                  <span class="method-name">verifyValidateFormWithName</span>
-                  <span class="parameters">(Quy Bui,Female,Andorra)</span>
+                  <a name="verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})">
+                  </a> <!-- verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male}) -->
+                  <span class="method-name">verifyFillFormAndAddToCart</span>
+                  <span class="parameters">({name=Quy Bui2, country=Argentina, gender=male})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})">
+                  </a> <!-- verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female}) -->
+                  <span class="method-name">verifyFillFormAndAddToCart</span>
+                  <span class="parameters">({name=Quy Bui1, country=Argentina, gender=Female})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +150,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse--335487673\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\quy.buithi\AppData\Local\Temp\testng-eclipse-649343921\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +159,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.verifyValidateFormWithName&quot;/&gt;
+      &lt;class name=&quot;org.verifyFillFormAndAddToCart&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +199,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyValidateFormWithName')
-data.setCell(0, 2, 'org.verifyValidateFormWithName')
-data.setCell(0, 3, 9393);
+data.setCell(0, 1, 'verifyFillFormAndAddToCart')
+data.setCell(0, 2, 'org.verifyFillFormAndAddToCart')
+data.setCell(0, 3, 24341);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyFillFormAndAddToCart')
+data.setCell(1, 2, 'org.verifyFillFormAndAddToCart')
+data.setCell(1, 3, 19871);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -221,22 +238,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.verifyValidateFormWithName</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.verifyFillFormAndAddToCart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">ConfigureAppium</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">preSetup</span>
-                <span class="method-start">14549 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyValidateFormWithName(Quy Bui, Female, Andorra)</span>
-                <span class="method-start">16051 ms</span>
+                <span class="method-name">verifyFillFormAndAddToCart({name=Quy Bui1, country=Argentina, gender=Female})</span>
+                <span class="method-start">35090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFillFormAndAddToCart({name=Quy Bui2, country=Argentina, gender=male})</span>
+                <span class="method-start">59433 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25449 ms</span>
+                <span class="method-start">79307 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

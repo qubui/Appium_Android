@@ -66,7 +66,6 @@ public class AndroidBaseTest extends AppiumUtils{
 		System.out.println(platform);
 		
 		String port = prop.getProperty("port");
-				
 		if (platform.contains("Emulator")) {
 			service = startAppiumServer(ipAddress,Integer.parseInt(port));
 			UiAutomator2Options options = new UiAutomator2Options();
@@ -83,7 +82,6 @@ public class AndroidBaseTest extends AppiumUtils{
 			formPage= new FormPage(driver);
 		} else if (platform.contains("RealDevice")) {
 			System.out.println("Run with Android Real Device");
-			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability("no",true);
 	        capabilities.setCapability("newCommandTimeout", 100000);
@@ -98,8 +96,17 @@ public class AndroidBaseTest extends AppiumUtils{
 			capabilities.setCapability("appActivity", "com.androidsample.generalstore.MainActivity");
 			// Initialize the driver object with the URL to Appium Server passing the capabilities. Server Url may vary
 			capabilities.setCapability("app", appPath);
-			capabilities.setCapability("noRest", true);			
-			driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);			
+			capabilities.setCapability("noRest", true);
+			try 
+			{
+				driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
+			}
+			catch (MalformedURLException e)
+			{
+				System.out.println("MalformedURLException Caught: "+e.getMessage());
+				e.printStackTrace();
+			}
+			//driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);			
 			formPage= new FormPage(driver);
 			
 			
@@ -132,11 +139,7 @@ public class AndroidBaseTest extends AppiumUtils{
 		}	
 
 	}
-	
-	
-
-
-	
+			
 	@AfterTest
 	//@AfterClass(alwaysRun=true)
 	public void tearDown()
