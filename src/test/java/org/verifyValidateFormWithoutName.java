@@ -4,6 +4,8 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.pageObjects.android.ProductCatalogue;
 
+import static org.testng.Assert.assertEquals;
+
 import org.TestUtils.AndroidBaseTest;
 import org.testng.annotations.BeforeMethod;
 
@@ -27,7 +29,7 @@ public class verifyValidateFormWithoutName extends AndroidBaseTest{
 		formPage.setCountrySelection("Andorra");
 		ProductCatalogue productCatalogue = formPage.submitForm();
 		String actualtMessage = formPage.getErrorMessage().getAttribute("name");
-		AssertJUnit.assertEquals(actualtMessage,expectedErrormessage);			
+		assertEquals(actualtMessage,expectedErrormessage);			
 	}
 	
 

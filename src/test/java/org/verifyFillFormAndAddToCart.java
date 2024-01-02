@@ -4,6 +4,10 @@ package org;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -18,8 +22,7 @@ public class verifyFillFormAndAddToCart extends AndroidBaseTest{
 
 	
 	@Test(dataProvider="getData")
-	public void verifyFillFormAndAddToCart(HashMap<String,String> input) throws InterruptedException
-	{	
+	public void verifyFillFormAndAddToCart(HashMap<String,String> input) throws InterruptedException {	
 		formPage.setActivity();
 		formPage.setNameField(input.get("name"));
 		formPage.setGender(input.get("gender"));
@@ -29,10 +32,10 @@ public class verifyFillFormAndAddToCart extends AndroidBaseTest{
 		CartPage cartPage = productCatalogue.goToCartPage();
 		double totalSum = cartPage.getProductsSum();
 		double displayFormattedSum = cartPage.getTotalAmountDisplayed();
-		AssertJUnit.assertEquals(totalSum, displayFormattedSum);
+		assertEquals(totalSum, displayFormattedSum);
 		cartPage.acceptTermsConditions();
 		cartPage.submitOrder();
-
+		assertFalse(cartPage.isTermsDisplay());
 	}
 	
 	
